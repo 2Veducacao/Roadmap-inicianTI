@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InicianTi - Roadmap de Desenvolvimento Fullstack</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rakkas&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .subtopic {
+            display: none;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+
+        body {
+            background-image: url('./src/img/fundo2.png');
+            background-repeat: repeat;
+            background-size: cover;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #1e90ff;
+            font-family: "Rakkas", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        span {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+        .subtopic-toggle {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+        .subtopic {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 24px;
+        }
+
+        .btn-link,
+        .btn-link:focus,
+        .btn-link:hover {
+            color: #dc3545;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            .subtopic-toggle,
+            .subtopic, span {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 26px;
+            }
+            .subtopic-toggle,
+            .subtopic, span {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Roadmap de Desenvolvimento Fullstack</h1>
+        <div class="accordion" id="accordionTopics">
+            <!-- Tópico 1 - Fundamentos Básicos -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne" id="topicOneBtn">
+                            <span id="topicOneTitle">1. Fundamentos Básicos</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingOne">
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicOne">HTML/CSS</a><input
+                            type="checkbox" class="subtopic-check" data-target="#subtopicOne"><br>
+                        <div id="subtopicOne" class="subtopic">Dominar a estrutura e estilização de páginas web.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicTwo">JavaScript</a><input
+                            type="checkbox" class="subtopic-check" data-target="#subtopicTwo"><br>
+                        <div id="subtopicTwo" class="subtopic">Entender os fundamentos da linguagem, incluindo
+                            manipulação do DOM e eventos.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 1 - Fundamentos Básicos -->
+
+            <!-- Tópico 2 - Desenvolvimento Frontend -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                            id="topicTwoBtn">
+                            <span id="topicTwoTitle">2. Desenvolvimento Frontend</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingTwo">
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicThree">Frameworks
+                            JavaScript</a><input type="checkbox" class="subtopic-check"
+                            data-target="#subtopicThree"><br>
+                        <div id="subtopicThree" class="subtopic">Aprender um framework (por exemplo, React.js) para
+                            criação de interfaces dinâmicas.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicFour">Responsive
+                            Design</a><input type="checkbox" class="subtopic-check" data-target="#subtopicFour"><br>
+                        <div id="subtopicFour" class="subtopic">Dominar técnicas para criar layouts que se adaptam a
+                            diferentes dispositivos.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 2 - Desenvolvimento Frontend -->
+
+            <!-- Tópico 3 - Desenvolvimento Backend -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                            id="topicThreeBtn">
+                            <span id="topicThreeTitle">3. Desenvolvimento Backend</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingThree">
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicFive">Linguagens de
+                            Programação para o Backend</a><input type="checkbox" class="subtopic-check"
+                            data-target="#subtopicFive"><br>
+                        <div id="subtopicFive" class="subtopic">Aprender uma linguagem de programação para
+                            desenvolvimento do lado do servidor, como Node.js, Python ou Java.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicSix">Frameworks
+                            Backend</a><input type="checkbox" class="subtopic-check" data-target="#subtopicSix"><br>
+                        <div id="subtopicSix" class="subtopic">Utilizar um framework backend popular como Express.js
+                            (para Node.js), Django (para Python) ou Spring (para Java).</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 3 - Desenvolvimento Backend -->
+
+            <!-- Tópico 4 - Banco de Dados -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                            id="topicFourBtn">
+                            <span id="topicFourTitle">4. Banco de Dados</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingFour">
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicSeven">
+                            Modelagem de Dados</a><input type="checkbox" class="subtopic-check"
+                            data-target="#subtopicSeven"><br>
+                        <div id="subtopicSeven" class="subtopic">Entender os princípios de modelagem de dados e como
+                            projetar esquemas de banco de dados relacionais e não relacionais.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicEight">SQL</a><input type="checkbox"
+                            class="subtopic-check" data-target="#subtopicEight"><br>
+                        <div id="subtopicEight" class="subtopic">Dominar a linguagem SQL para consultar e manipular
+                            bancos de dados relacionais.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 4 - Banco de Dados -->
+
+            <!-- Tópico 5 - Controle de Versão (Git) -->
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                            id="topicFiveBtn">
+                            <span id="topicFiveTitle">5. Controle de Versão (Git)</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingFive">
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicNine">Git Basics</a><input
+                            type="checkbox" class="subtopic-check" data-target="#subtopicNine"><br>
+                        <div id="subtopicNine" class="subtopic">Aprender os conceitos básicos do Git, como commits,
+                            branches e merges.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicTen">Colaboração com
+                            Git</a><input type="checkbox" class="subtopic-check" data-target="#subtopicTen"><br>
+                        <div id="subtopicTen" class="subtopic">Utilizar plataformas de hospedagem de código, como
+                            GitHub, GitLab ou Bitbucket para colaboração eficiente.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 5 - Controle de Versão (Git) -->
+
+            <!-- Tópico 6 - Segurança -->
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                            id="topicSixBtn">
+                            <span id="topicSixTitle">6. Segurança</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingSix">
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicEleven">Autenticação e
+                            Autorização</a><input type="checkbox" class="subtopic-check"
+                            data-target="#subtopicEleven"><br>
+                        <div id="subtopicEleven" class="subtopic">Implementar sistemas de autenticação seguros, como
+                            OAuth ou JWT, e autorização baseada em papéis.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicTwelve">Segurança da
+                            Aplicação</a><input type="checkbox" class="subtopic-check"
+                            data-target="#subtopicTwelve"><br>
+                        <div id="subtopicTwelve" class="subtopic">Proteger contra vulnerabilidades comuns de
+                            segurança, como injeções SQL, XSS e CSRF.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 6 - Segurança -->
+
+            <!-- Tópico 7 - Implantação e Hospedagem -->
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"
+                            id="topicSevenBtn">
+                            <span id="topicSevenTitle">7. Implantação e Hospedagem</span>
+                        </button>
+                        <input type="checkbox" class="topic-check" data-target="#headingSeven">
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionTopics">
+                    <div class="card-body">
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicThirteen">Plataformas de
+                            Hospedagem</a><input type="checkbox" class="subtopic-check"
+                            data-target="#subtopicThirteen"><br>
+                        <div id="subtopicThirteen" class="subtopic">Implantar aplicativos em plataformas de
+                            hospedagem como Heroku, AWS, Azure ou DigitalOcean.</div>
+                        <a href="#" class="subtopic-toggle" data-subtopic="#subtopicFourteen">CI/CD</a><input
+                            type="checkbox" class="subtopic-check" data-target="#subtopicFourteen"><br>
+                        <div id="subtopicFourteen" class="subtopic">Automatizar o processo de integração contínua e
+                            entrega contínua para implantações mais rápidas e seguras.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim do tópico 7 - Implantação e Hospedagem -->
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".subtopic-toggle").click(function () {
+                var subtopic = $($(this).data("subtopic"));
+                subtopic.slideToggle();
+
+                // Marcar/desmarcar título como concluído
+                var checkbox = $(this).next('.subtopic-check');
+                var title = $(this).prev('button').find('span');
+                var topicCard = $(this).closest('.card');
+                var subtopicChecks = topicCard.find('.subtopic-check');
+                var allSubtopicsCompleted = true;
+
+                subtopicChecks.each(function () {
+                    if (!$(this).prop("checked")) {
+                        allSubtopicsCompleted = false;
+                        return false; // Exit loop early if any subtopic is not completed
+                    }
+                });
+
+                checkbox.prop("checked", allSubtopicsCompleted);
+                title.toggleClass("completed", allSubtopicsCompleted);
+            });
+
+            $(".subtopic-check").change(function () {
+                var topicCard = $(this).closest('.card');
+                var subtopicChecks = topicCard.find('.subtopic-check');
+                var topicCheckbox = topicCard.find('.topic-check');
+                var title = topicCard.find('button').find('span');
+                var allSubtopicsCompleted = true;
+
+                subtopicChecks.each(function () {
+                    if (!$(this).prop("checked")) {
+                        allSubtopicsCompleted = false;
+                        return false; // Exit loop early if any subtopic is not completed
+                    }
+                });
+
+                topicCheckbox.prop("checked", allSubtopicsCompleted);
+                title.toggleClass("completed", allSubtopicsCompleted);
+            });
+
+            $(".topic-check").click(function () {
+                var topicCard = $(this).closest('.card');
+                var topicCheckbox = $(this);
+                var subtopicChecks = topicCard.find('.subtopic-check');
+                var allSubtopicsCompleted = true;
+
+                subtopicChecks.each(function () {
+                    if (!$(this).prop("checked")) {
+                        allSubtopicsCompleted = false;
+                        return false; // Exit loop early if any subtopic is not completed
+                    }
+                });
+
+                if (allSubtopicsCompleted) {
+                    topicCheckbox.prop("checked", true);
+                    topicCard.find('button').find('span').addClass("completed");
+                } else {
+                    topicCheckbox.prop("checked", false);
+                    topicCard.find('button').find('span').removeClass("completed");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
